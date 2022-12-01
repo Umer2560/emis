@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-28 10:16:01.820329",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "certificatediploma",
+  "subject",
+  "boarduniversity",
+  "country",
+  "total_marks",
+  "obtained_marks",
+  "date_of_completion"
+ ],
+ "fields": [
+  {
+   "fieldname": "certificatediploma",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Certificate/Diploma",
+   "oldfieldname": "school_univ",
+   "oldfieldtype": "Small Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "oldfieldname": "qualification",
+   "oldfieldtype": "Data",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "boarduniversity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Board/University/Institute",
+   "oldfieldname": "level",
+   "oldfieldtype": "Select",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "oldfieldname": "class_per",
+   "oldfieldtype": "Data",
+   "options": "Country Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Marks",
+   "non_negative": 1,
+   "oldfieldname": "maj_opt_subj",
+   "oldfieldtype": "Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "obtained_marks",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Obtained Marks",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_completion",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Completion",
+   "oldfieldname": "year_of_passing",
+   "oldfieldtype": "Int",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-29 11:54:10.090424",
+ "modified_by": "Administrator",
+ "module": "emis",
+ "name": "Professional Education",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "creation": "2022-10-31 09:56:14.240914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_school_where_transferred",
+  "posting_from_date",
+  "posting_to_date",
+  "order_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_school_where_transferred",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of School where Transferred",
+   "oldfieldname": "school_univ",
+   "oldfieldtype": "Small Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "oldfieldname": "qualification",
+   "oldfieldtype": "Data",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "posting_to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "oldfieldname": "level",
+   "oldfieldtype": "Select",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order No",
+   "oldfieldname": "class_per",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-16 12:49:26.732179",
+ "modified_by": "Administrator",
+ "module": "EMIS",
+ "name": "Posting Transfer History Form",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,1406 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-10-25 15:01:26.789318",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information",
+  "naming_series",
+  "status",
+  "image",
+  "heading_4",
+  "first_name",
+  "last_name",
+  "father_name",
+  "cnic",
+  "cnic_issue",
+  "cnic_expiry",
+  "gender",
+  "district",
+  "tehsil",
+  "village",
+  "domicile",
+  "blood_group",
+  "date_of_birth",
+  "religion",
+  "mobile_no",
+  "home_contact",
+  "email_id",
+  "ntn_no",
+  "office_contact",
+  "home_address",
+  "office_address",
+  "heading_27",
+  "languages_speak",
+  "marital_status",
+  "passport_no",
+  "place_of_issue",
+  "passport_date_of_issue",
+  "passport_date_of_expiry",
+  "heading_33",
+  "person_to_be_contacted",
+  "relation",
+  "emergency_number",
+  "appointment_details_section",
+  "date_of_appointment",
+  "place_of_appointment",
+  "appointment_no",
+  "appointed_through",
+  "details_of_appointed_through",
+  "disability",
+  "type_of_disability",
+  "personal_no",
+  "gpf_ac_no",
+  "ddo_code",
+  "cadre",
+  "position_at_initial_appointment",
+  "bps",
+  "nature_of_appointment",
+  "details_of_nature_of_appointment",
+  "departments",
+  "schooloffice_of_initial_appointment",
+  "institution_code",
+  "date_of_end_of_probation",
+  "job_offer_date",
+  "retirement_date",
+  "name_of_pervious_department",
+  "current_position",
+  "current_bps",
+  "carde_of_current",
+  "current_timescale_grade",
+  "current_timescale_order_no",
+  "employee_current_status",
+  "reports_to",
+  "original_appointed_schooloffice",
+  "original_department",
+  "original_institution_code",
+  "leave_policy_section",
+  "leave_policy_category",
+  "leave_approver",
+  "leave_approver_name",
+  "service_particulars_of_spousehusband__wife_section",
+  "name_of_spouse",
+  "cnic_spouse",
+  "department_spouse",
+  "location",
+  "post_held",
+  "no_of_children",
+  "educational_qualification",
+  "education",
+  "professional_qualification_section",
+  "professional_education",
+  "up_gradation_promotions",
+  "up_gradation_promotion",
+  "postingtransfer_history_section",
+  "transfer_history",
+  "professional_training_history_section",
+  "get_training",
+  "training_opportunities",
+  "availed_training",
+  "given_material",
+  "after_training",
+  "new_teaching_technique",
+  "helpful_training",
+  "learned_techinque",
+  "interest",
+  "have_an_interest",
+  "area_of_interest",
+  "reason",
+  "avail_any_training_section",
+  "avail_training_lesson",
+  "training_name",
+  "training_institute_name",
+  "classes",
+  "section_break_116",
+  "classes_do_you_teach",
+  "heading_110",
+  "ecd",
+  "1st",
+  "2nd",
+  "3rd",
+  "4th",
+  "5th",
+  "6th",
+  "7th",
+  "8th",
+  "9th",
+  "10th",
+  "subjects_section",
+  "subject_teach",
+  "section_break_132",
+  "avail_training_teacher",
+  "teacher_training",
+  "teacher_institute",
+  "section_break_137",
+  "aid_in_learning",
+  "heading_130",
+  "teaching_kit",
+  "school_bag",
+  "chart",
+  "material_not_issued",
+  "training_was_not_provided_to_use_the_material",
+  "teaching_guide",
+  "black_board",
+  "models",
+  "low_cost_no_cost_material",
+  "visual_aid",
+  "time_not_allocated",
+  "the_learning_through_various_activities",
+  "section_break_152",
+  "distance_from_residence_to_schoolwhere_you_are_currently_living",
+  "travel",
+  "please_specify_transport",
+  "money",
+  "time_reach",
+  "certificate_section",
+  "small_text_160",
+  "name_emp",
+  "cnic_emp",
+  "contact_no",
+  "certificate_date",
+  "verified",
+  "name_officer",
+  "des_officer",
+  "contact_officer",
+  "date_officer"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Section Break",
+   "label": "Personal Information",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "columns": 3,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "EMIS-",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father/Husband Name",
+   "oldfieldname": "salutation",
+   "oldfieldtype": "Select"
+  },
+  {
+   "columns": 3,
+   "fieldname": "cnic",
+   "fieldtype": "Data",
+   "label": "CNIC",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "description": "CNIC Date of Expiry",
+   "fieldname": "cnic_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "columns": 3,
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "District",
+   "options": "District Form",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "tehsil",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tehsil",
+   "options": "Tehsil Form",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "\nMuslim\nNon-Muslim",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "languages_speak",
+   "fieldtype": "Table MultiSelect",
+   "label": "Languages Speak",
+   "options": "Language Speak Table",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "home_address",
+   "fieldtype": "Small Text",
+   "label": "Home Address",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "office_contact",
+   "fieldtype": "Data",
+   "label": "Office Contact"
+  },
+  {
+   "columns": 3,
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "columns": 3,
+   "description": "Passport Date of Issue",
+   "fieldname": "passport_date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "columns": 3,
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "options": "Active\nLeft",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "columns": 4,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "oldfieldname": "gender",
+   "oldfieldtype": "Select",
+   "options": "Gender Form",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "description": "CNIC Date of Issue",
+   "fieldname": "cnic_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "oldfieldname": "date_of_birth",
+   "oldfieldtype": "Date",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "columns": 3,
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Village",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "domicile",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Domicile",
+   "options": "District Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nSeparated\nDeceased Spouse",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_global_search": 1,
+   "label": "Date of Birth",
+   "oldfieldname": "employee_number",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "ntn_no",
+   "fieldtype": "Data",
+   "label": "NTN No"
+  },
+  {
+   "columns": 4,
+   "fieldname": "office_address",
+   "fieldtype": "Small Text",
+   "label": "Office Address",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place of Issue"
+  },
+  {
+   "columns": 3,
+   "description": "Passport Date of Expiry",
+   "fieldname": "passport_date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "columns": 5,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "no_copy": 1
+  },
+  {
+   "bold": 1,
+   "columns": 4,
+   "fieldname": "person_to_be_contacted",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation with Emergency Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employment Information"
+  },
+  {
+   "columns": 3,
+   "fieldname": "date_of_appointment",
+   "fieldtype": "Date",
+   "label": "Date of Appointment",
+   "oldfieldname": "date_of_joining",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "appointed_through",
+   "fieldtype": "Link",
+   "label": "Appointed Through",
+   "options": "Appointed Through Form",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "disability",
+   "fieldtype": "Select",
+   "label": "Disability",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "personal_no",
+   "fieldtype": "Int",
+   "label": "Personal No",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "ddo_code",
+   "fieldtype": "Data",
+   "label": "DDO Code"
+  },
+  {
+   "columns": 3,
+   "fieldname": "position_at_initial_appointment",
+   "fieldtype": "Link",
+   "label": "Position at Initial Appointment",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "nature_of_appointment",
+   "fieldtype": "Select",
+   "label": "Nature of Appointment",
+   "options": "\nPermanent\nContract\nContingent\nSPS\nLeave Vacancy\nAttachment\nLien\nAny Other (Specify)",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "current_position",
+   "fieldtype": "Link",
+   "label": "Current Position",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "current_timescale_grade",
+   "fieldtype": "Select",
+   "label": "Current Timescale Grade",
+   "options": "\nB-20\nB-19\nB-18\nB-17\nB-16\nB-15\nB-14\nB-13\nB-12\nB-11\nB-10\nB-9\nB-8\nB-7\nB-6\nB-5\nB-4\nB-3\nB-2\nB-1",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "employee_current_status",
+   "fieldtype": "Select",
+   "label": "Employee Current Status",
+   "options": "\nOn Duty\nOSD\nOn Deputation\nOn Leave\nSuspended",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "original_appointed_schooloffice",
+   "fieldtype": "Data",
+   "label": "Original Appointed School/Office",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "original_institution_code",
+   "fieldtype": "Int",
+   "label": "Institution Code",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "appointment_no",
+   "fieldtype": "Data",
+   "label": "Appointment Order No",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "place_of_appointment",
+   "fieldtype": "Data",
+   "label": "Place of Appointment",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "type_of_disability",
+   "fieldtype": "Table MultiSelect",
+   "label": "Type of Disability",
+   "mandatory_depends_on": "eval:doc.disability==\"Yes\"",
+   "options": "Disability Types Table"
+  },
+  {
+   "columns": 3,
+   "fieldname": "gpf_ac_no",
+   "fieldtype": "Data",
+   "label": "GPF A/C No",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "bps",
+   "fieldtype": "Select",
+   "label": "BPS",
+   "options": "\nB-20\nB-19\nB-18\nB-17\nB-16\nB-15\nB-14\nB-13\nB-12\nB-11\nB-10\nB-9\nB-8\nB-7\nB-6\nB-5\nB-4\nB-3\nB-2\nB-1",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval:doc.nature_of_appointment == 'Any Other (Specify)'",
+   "fieldname": "details_of_nature_of_appointment",
+   "fieldtype": "Data",
+   "label": "Details of Nature of Appointment",
+   "mandatory_depends_on": "eval:doc.nature_of_appointment == 'Any Other (Specify)'"
+  },
+  {
+   "columns": 4,
+   "fieldname": "departments",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "institution_code",
+   "fieldtype": "Int",
+   "label": "Institution Code"
+  },
+  {
+   "columns": 4,
+   "fieldname": "date_of_end_of_probation",
+   "fieldtype": "Date",
+   "label": "Date of end of Probation",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "retirement_date",
+   "fieldtype": "Date",
+   "label": "Retirement Date"
+  },
+  {
+   "columns": 4,
+   "fieldname": "carde_of_current",
+   "fieldtype": "Select",
+   "label": "Cadre(Current)",
+   "options": "\nTeaching\nNon Teaching",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "current_bps",
+   "fieldtype": "Select",
+   "label": "Current BPS",
+   "options": "\nB-20\nB-19\nB-18\nB-17\nB-16\nB-15\nB-14\nB-13\nB-12\nB-11\nB-10\nB-9\nB-8\nB-7\nB-6\nB-5\nB-4\nB-3\nB-2\nB-1",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "current_timescale_order_no",
+   "fieldtype": "Int",
+   "label": "Current Timescale Order No",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "reports_to",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Reports to",
+   "oldfieldname": "reports_to",
+   "oldfieldtype": "Link",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "original_department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department Form",
+   "reqd": 1
+  },
+  {
+   "columns": 12,
+   "fieldname": "leave_policy_section",
+   "fieldtype": "Heading",
+   "label": "Leave Policy"
+  },
+  {
+   "columns": 4,
+   "fieldname": "leave_policy_category",
+   "fieldtype": "Link",
+   "label": "Leave Policy Category",
+   "options": "Leave Type Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "leave_approver_name",
+   "fieldtype": "Data",
+   "label": "Leave Approver Name",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "leave_approver",
+   "fieldtype": "Link",
+   "label": "Leave Approver Designation",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_particulars_of_spousehusband__wife_section",
+   "fieldtype": "Section Break",
+   "label": "Service Particulars of Spouse if Govt Employee(Husband / Wife)"
+  },
+  {
+   "columns": 4,
+   "fieldname": "post_held",
+   "fieldtype": "Data",
+   "label": "Post held",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "no_of_children",
+   "fieldtype": "Int",
+   "label": "No of Children",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Section Break",
+   "label": "Academic Qualification"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Employee Education Forms"
+  },
+  {
+   "fieldname": "professional_qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Professional Qualification"
+  },
+  {
+   "fieldname": "professional_education",
+   "fieldtype": "Table",
+   "label": "Professional Education",
+   "options": "Professional Education",
+   "reqd": 1
+  },
+  {
+   "fieldname": "up_gradation_promotions",
+   "fieldtype": "Section Break",
+   "label": "Up-Gradation / Promotion History"
+  },
+  {
+   "fieldname": "up_gradation_promotion",
+   "fieldtype": "Table",
+   "label": "Regular/Timescale(Start from the initial Promotion/Upgradation)",
+   "options": "Up Gradation Promotion Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "postingtransfer_history_section",
+   "fieldtype": "Section Break",
+   "label": "Posting/Transfer History"
+  },
+  {
+   "fieldname": "transfer_history",
+   "fieldtype": "Table",
+   "label": "Posting/Transfer History (Mention last 03 only)",
+   "options": "Posting Transfer History Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "professional_training_history_section",
+   "fieldtype": "Section Break",
+   "label": "Professional Training History"
+  },
+  {
+   "columns": 4,
+   "fieldname": "get_training",
+   "fieldtype": "Select",
+   "label": "Did you get any training opportunities on the job?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.get_training == 'Yes'",
+   "fieldname": "training_opportunities",
+   "fieldtype": "Table",
+   "label": "Training Opportunities ",
+   "mandatory_depends_on": "eval:doc.get_training == 'Yes'",
+   "options": "Job Opportunities Form"
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "availed_training",
+   "fieldtype": "Section Break",
+   "label": "Availed Training During Service",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'"
+  },
+  {
+   "columns": 6,
+   "fieldname": "given_material",
+   "fieldtype": "Select",
+   "label": "Was learning material/booklet given to you?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "after_training",
+   "fieldtype": "Select",
+   "label": "Did you use the learning material after the training?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "helpful_training",
+   "fieldtype": "Select",
+   "label": "Did you find the training helpful?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "learned_techinque",
+   "fieldtype": "Select",
+   "label": "Are you using the technique learned in the training practically?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "department_spouse",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department Form",
+   "reqd": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "new_teaching_technique",
+   "fieldtype": "Select",
+   "label": "Did you learn new teaching technique from the training?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "interest",
+   "fieldtype": "Section Break",
+   "label": "Interest in More Training ",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "columns": 4,
+   "fieldname": "have_an_interest",
+   "fieldtype": "Select",
+   "label": "Do you have an interest in more training?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "oldfieldname": "resignation_letter_date",
+   "oldfieldtype": "Date",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "depends_on": "eval: doc.have_an_interest==\"Yes\"",
+   "fieldname": "area_of_interest",
+   "fieldtype": "Data",
+   "label": "Area of Interest",
+   "mandatory_depends_on": "eval: doc.have_an_interest==\"Yes\"",
+   "oldfieldname": "relieving_date",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "depends_on": "eval: doc.have_an_interest==\"No\"",
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason Why you are not interested",
+   "mandatory_depends_on": "eval: doc.have_an_interest==\"No\"",
+   "oldfieldname": "reason_for_leaving",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "avail_any_training_section",
+   "fieldtype": "Section Break",
+   "label": "Avail any Training",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'"
+  },
+  {
+   "columns": 5,
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "avail_training_lesson",
+   "fieldtype": "Select",
+   "label": "Did you avail any training in lesson planning?",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval: doc.avail_training_lesson==\"Yes\"",
+   "fieldname": "training_name",
+   "fieldtype": "Data",
+   "label": "Training Name",
+   "mandatory_depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval: doc.avail_training_lesson==\"Yes\"",
+   "fieldname": "training_institute_name",
+   "fieldtype": "Data",
+   "label": "Institute Name",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "classes",
+   "fieldtype": "Select",
+   "label": "How many classes do you teach each day?  ",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "ecd",
+   "fieldtype": "Check",
+   "label": "ECD"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "1st",
+   "fieldtype": "Check",
+   "label": "1st"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "2nd",
+   "fieldtype": "Check",
+   "label": "2nd"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "3rd",
+   "fieldtype": "Check",
+   "label": "3rd"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "4th",
+   "fieldtype": "Check",
+   "label": "4th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "5th",
+   "fieldtype": "Check",
+   "label": "5th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "6th",
+   "fieldtype": "Check",
+   "label": "6th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "7th",
+   "fieldtype": "Check",
+   "label": "7th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "8th",
+   "fieldtype": "Check",
+   "label": "8th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "9th",
+   "fieldtype": "Check",
+   "label": "9th"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "10th",
+   "fieldtype": "Check",
+   "label": "10th"
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "section_break_116",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "subjects_section",
+   "fieldtype": "Section Break",
+   "label": "Subjects"
+  },
+  {
+   "columns": 4,
+   "fieldname": "avail_training_teacher",
+   "fieldtype": "Select",
+   "label": "Did you avail any training in teaching",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "depends_on": "eval: doc.avail_training_teacher==\"Yes\"",
+   "fieldname": "teacher_training",
+   "fieldtype": "Data",
+   "label": "Training Name",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "depends_on": "eval: doc.avail_training_teacher==\"Yes\"",
+   "fieldname": "teacher_institute",
+   "fieldtype": "Data",
+   "label": "Institute Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "section_break_132",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 4,
+   "fieldname": "aid_in_learning",
+   "fieldtype": "Select",
+   "label": "Did you use a learning aid in the classroom",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "section_break_137",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "teaching_kit",
+   "fieldtype": "Check",
+   "label": "Teaching Kit"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "school_bag",
+   "fieldtype": "Check",
+   "label": "School Bag"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "chart",
+   "fieldtype": "Check",
+   "label": "Chart"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "teaching_guide",
+   "fieldtype": "Check",
+   "label": "Teaching Guide"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "black_board",
+   "fieldtype": "Check",
+   "label": "Black Board"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "models",
+   "fieldtype": "Check",
+   "label": "Models"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"Yes\"",
+   "fieldname": "low_cost_no_cost_material",
+   "fieldtype": "Check",
+   "label": "Low Cost No Cost Material"
+  },
+  {
+   "columns": 4,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"No\"",
+   "fieldname": "material_not_issued",
+   "fieldtype": "Check",
+   "label": "Material not Issued"
+  },
+  {
+   "columns": 4,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"No\"",
+   "fieldname": "training_was_not_provided_to_use_the_material",
+   "fieldtype": "Check",
+   "label": "Training was not provided to use the material"
+  },
+  {
+   "columns": 4,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"No\"",
+   "fieldname": "visual_aid",
+   "fieldtype": "Check",
+   "label": "Audio-visual Aid not provided"
+  },
+  {
+   "columns": 4,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"No\"",
+   "fieldname": "time_not_allocated",
+   "fieldtype": "Check",
+   "label": "Time was not allocated for the use of material"
+  },
+  {
+   "columns": 4,
+   "default": "0",
+   "depends_on": "eval:doc.aid_in_learning==\"No\"",
+   "fieldname": "the_learning_through_various_activities",
+   "fieldtype": "Check",
+   "label": "The learning through various activities"
+  },
+  {
+   "depends_on": "eval:doc.carde_of_current == 'Teaching'",
+   "fieldname": "section_break_152",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 4,
+   "description": "Where you are currently living",
+   "fieldname": "distance_from_residence_to_schoolwhere_you_are_currently_living",
+   "fieldtype": "Select",
+   "label": "Distance from residence to school.",
+   "options": "\nLess than 1km\n1 - 2 KMs\n3 - 5 KMs\n5-9 KMs\nMore than 10KMs",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "travel",
+   "fieldtype": "Select",
+   "label": "How do you travel to school",
+   "options": "\nBy walk\nPublic Transport\nPersonal Transport\nGovt Transport\nOther",
+   "reqd": 1
+  },
+  {
+   "columns": 5,
+   "depends_on": "eval:doc.travel==\"Other\"",
+   "fieldname": "please_specify_transport",
+   "fieldtype": "Data",
+   "label": "Please Specify Transport",
+   "mandatory_depends_on": "eval:doc.travel==\"Other\""
+  },
+  {
+   "columns": 4,
+   "description": "Mention in Rupees",
+   "fieldname": "money",
+   "fieldtype": "Currency",
+   "label": "Money do you spend on school transport monthly",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "time_reach",
+   "fieldtype": "Int",
+   "label": "Time to reach the school",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "certificate_section",
+   "fieldtype": "Section Break",
+   "label": "Certificate"
+  },
+  {
+   "default": "It is certified that the information given in the questionnaire is correct in all respects in my knowledge and belief. If any information given in the questionnaire is mismatched with actual data, I will be liable to face legal consequences.",
+   "fieldname": "small_text_160",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "name_emp",
+   "fieldtype": "Data",
+   "label": "Name of Employee"
+  },
+  {
+   "columns": 3,
+   "fieldname": "cnic_emp",
+   "fieldtype": "Data",
+   "label": "CNIC"
+  },
+  {
+   "columns": 3,
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No"
+  },
+  {
+   "columns": 3,
+   "fieldname": "certificate_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "verified",
+   "fieldtype": "Section Break",
+   "label": "Verified/Countersigned by (Section Head / Head Teacher / DDO)"
+  },
+  {
+   "columns": 4,
+   "fieldname": "name_officer",
+   "fieldtype": "Data",
+   "label": "Name of the Countersigning Officer"
+  },
+  {
+   "columns": 4,
+   "fieldname": "des_officer",
+   "fieldtype": "Data",
+   "label": "Designation of Countersigning Officer"
+  },
+  {
+   "columns": 4,
+   "fieldname": "contact_officer",
+   "fieldtype": "Data",
+   "label": "Contact No"
+  },
+  {
+   "columns": 3,
+   "fieldname": "date_officer",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "columns": 3,
+   "fieldname": "home_contact",
+   "fieldtype": "Data",
+   "label": "Home Contact",
+   "reqd": 1
+  },
+  {
+   "columns": 8,
+   "fieldname": "subject_teach",
+   "fieldtype": "Table MultiSelect",
+   "label": "Which Subjects do you teach(Name All)",
+   "options": "Subjects Table Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "heading_4",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "columns": 4,
+   "fieldname": "emergency_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact No",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "depends_on": "eval:doc.appointed_through == 'Any Other (Specify)'",
+   "fieldname": "details_of_appointed_through",
+   "fieldtype": "Data",
+   "label": "Details of Appointed Through"
+  },
+  {
+   "columns": 4,
+   "fieldname": "schooloffice_of_initial_appointment",
+   "fieldtype": "Data",
+   "label": "School/Office of Initial Appointment",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "job_offer_date",
+   "fieldtype": "Date",
+   "label": "Job Offer Date",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "description": "If joined by transfer of service",
+   "fieldname": "name_of_pervious_department",
+   "fieldtype": "Link",
+   "label": "Name of pervious Department",
+   "options": "Department Form",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "name_of_spouse",
+   "fieldtype": "Data",
+   "label": "Name",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "cnic_spouse",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "CNIC",
+   "oldfieldname": "holiday_list",
+   "oldfieldtype": "Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "classes_do_you_teach",
+   "fieldtype": "Heading",
+   "label": "Which classes do you teach(select more than 1)"
+  },
+  {
+   "fieldname": "heading_110",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "heading_130",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "heading_33",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "heading_27",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "columns": 3,
+   "fieldname": "cadre",
+   "fieldtype": "Select",
+   "label": "Cadre(Initial)",
+   "options": "\nTeaching\nNon Teaching"
+  }
+ ],
+ "icon": "fa fa-user",
+ "image_field": "image",
+ "is_custom_form": 1,
+ "links": [],
+ "modified": "2022-12-01 14:37:37.440988",
+ "modified_by": "Administrator",
+ "module": "emis",
+ "name": "Employee Form",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

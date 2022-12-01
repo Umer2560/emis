@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-31 09:52:40.043825",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "last_position",
+  "last_grade",
+  "new_position",
+  "new_grade",
+  "date_of_promotion",
+  "order_no",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_promotion",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Promotion",
+   "oldfieldname": "maj_opt_subj",
+   "oldfieldtype": "Text",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type of Promotion",
+   "oldfieldname": "year_of_passing",
+   "oldfieldtype": "Int",
+   "options": "\nRegular\nTimescale"
+  },
+  {
+   "fieldname": "last_position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Last Position",
+   "oldfieldname": "school_univ",
+   "oldfieldtype": "Small Text",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Last Grade",
+   "oldfieldname": "qualification",
+   "oldfieldtype": "Data",
+   "options": "\nB-20\nB-19\nB-18\nB-17\nB-16\nB-15\nB-14\nB-13\nB-12\nB-11\nB-10\nB-9\nB-8\nB-7\nB-6\nB-5\nB-4\nB-3\nB-2\nB-1",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "new_position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "New Position",
+   "oldfieldname": "level",
+   "oldfieldtype": "Select",
+   "options": "Position Cadre Form",
+   "reqd": 1
+  },
+  {
+   "fieldname": "new_grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "New Grade",
+   "oldfieldname": "class_per",
+   "oldfieldtype": "Data",
+   "options": "\nB-20\nB-19\nB-18\nB-17\nB-16\nB-15\nB-14\nB-13\nB-12\nB-11\nB-10\nB-9\nB-8\nB-7\nB-6\nB-5\nB-4\nB-3\nB-2\nB-1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-29 11:54:59.565955",
+ "modified_by": "Administrator",
+ "module": "emis",
+ "name": "Up Gradation Promotion Form",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

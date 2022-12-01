@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2022-10-31 10:19:28.925133",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_training",
+  "training_subject",
+  "training_year",
+  "training_institute"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_training",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Training",
+   "oldfieldname": "school_univ",
+   "oldfieldtype": "Small Text"
+  },
+  {
+   "fieldname": "training_subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Training Subject",
+   "oldfieldname": "qualification",
+   "oldfieldtype": "Data",
+   "print_width": "100px",
+   "width": "100px"
+  },
+  {
+   "fieldname": "training_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Year",
+   "oldfieldname": "level",
+   "oldfieldtype": "Select",
+   "options": "Year Form"
+  },
+  {
+   "fieldname": "training_institute",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Training Institute/Organizer",
+   "oldfieldname": "class_per",
+   "oldfieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-16 14:52:45.061219",
+ "modified_by": "Administrator",
+ "module": "EMIS",
+ "name": "Job Opportunities Form",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

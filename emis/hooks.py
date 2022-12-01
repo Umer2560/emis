@@ -14,11 +14,12 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/emis/css/emis.css"
-# app_include_js = "/assets/emis/js/emis.js"
+app_include_js = "/assets/js/personal_detail_validation.js"
+
 
 # include js, css files in header of web template
-# web_include_css = "/assets/emis/css/emis.css"
-# web_include_js = "/assets/emis/js/emis.js"
+# web_include_css = "/assets/emis/css/emis.css" 
+web_include_js = "/assets/js/personal_detail_validations.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "emis/public/scss/website"
@@ -46,7 +47,7 @@ app_license = "MIT"
 # role_home_page = {
 #	"Role": "home_page"
 # }
-
+ 
 # Generators
 # ----------
 

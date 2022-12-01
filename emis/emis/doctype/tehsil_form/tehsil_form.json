@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "field:tehsil_name",
+ "creation": "2022-10-25 16:17:23.604739",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "division",
+  "district",
+  "sub_division",
+  "tehsil_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "tehsil_name",
+   "fieldtype": "Data",
+   "label": "Tehsil Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Division",
+   "options": "Division Form"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "District",
+   "options": "District Form"
+  },
+  {
+   "fieldname": "sub_division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Division",
+   "options": "Sub Division Form"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-03 10:35:08.031119",
+ "modified_by": "Administrator",
+ "module": "emis",
+ "name": "Tehsil Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

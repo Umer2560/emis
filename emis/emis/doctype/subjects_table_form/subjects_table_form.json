@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2022-11-03 13:14:46.905117",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subjects"
+ ],
+ "fields": [
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subjects",
+   "options": "Subjects Form"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-29 12:51:09.597622",
+ "modified_by": "Administrator",
+ "module": "emis",
+ "name": "Subjects Table Form",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
